@@ -174,18 +174,57 @@ main {
 
 /* team_up */
 
+
+.team_up {
+  height: 800px;
+  background-image: url('../img/team_up/h3-background-img.jpg');
+
+}
+
+
 /* /team_up */
 
 
 /* /team_low */
 
+.team_low {
+  justify-content: center;
+}
+
+
 /* /team_low */
 
 
 /* partners */
+#partners {
+  background-color: #F6F7F2;
+  justify-content: center;
+  padding: 80px;
+}
+
 /* /partners */
 
 /* products */
+
+#products {
+  padding: 80px 0px;
+  /* align-items: center; */
+}
+
+.products_details {
+  text-align: center;
+  width: 30%;
+  align-self: center;
+}
+
+.products_pics {
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.products_pics > div {
+  align-items: center;
+}
 /* /products */
 
 /* deals */

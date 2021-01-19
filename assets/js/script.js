@@ -36,6 +36,52 @@ let app = new Vue({
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesent ut aliquam dui",
       },
     ],
+    team_low: [
+      "./assets/img/team_low/a.jpg",
+      "./assets/img/team_low/b.jpg",
+      "./assets/img/team_low/c.jpg",
+      "./assets/img/team_low/d.jpg",
+    ],
+    partners: [
+      "./assets/img/partners/h1-clients-img-1.png",
+      "./assets/img/partners/h1-clients-img-2.png",
+      "./assets/img/partners/h1-clients-img-3.png",
+      "./assets/img/partners/h1-clients-img-4.png",
+      "./assets/img/partners/h1-clients-img-5.png",
+    ],
+    products: [
+      {
+        src: "./assets/img/products/h3-product-img-1a-100x100.png",
+        title: "BISMARCK",
+        price: "$30.00",
+      },
+      {
+        src: "./assets/img/products/h3-product-img-2a-150x150.png",
+        title: "FIORI DI ZUCCA",
+        price: "$7.00 - $50.00",
+      },
+      {
+        src: "./assets/img/products/h3-product-img-3a-150x150.png",
+        title: "VALDOSTANA",
+        price: "$55.00",
+      },
+      {
+        src: "./assets/img/products/h3-product-img-4a-150x150.png",
+        title: "PIZZA TARTUFATA",
+        price: "$45.00",
+      },
+      {
+        src: "./assets/img/products/h3-product-img-5a-150x150.png",
+        title: "FRANCESCANA",
+        price: "$25.00",
+      },
+      {
+        src: "./assets/img/products/h3-product-img-6a-100x100.png",
+        title: "CAMPAGNOLA",
+        price: "$30.00",
+      },
+      
+    ],
   },
   methods: {},
   mounted() {},

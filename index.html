@@ -98,11 +98,38 @@
       </div>
     </section>
     <section id="team_up">
-      
+      <div class="team_up">
+        asds
+      </div>
     </section>
-    <section id="team_low"></section>
-    <section id="partners"></section>
-    <section id="products"></section>
+    <section id="team_low">
+      <div class="team_low flex">
+      <div class="flex" v-for="(team, index) in team_low" :key="index">
+        <img :src="team_low[index]" alt="" style="width: 100%;">
+      </div>
+      </div>
+    </section>
+    <section id="partners" class="flex">
+      <div class="partners flex" v-for="(partner, index) in partners" :key="index">
+        <img :src="partners[index]" alt="" style="width: 90%;">
+      </div>
+    </section>
+    <section id="products" class="flex column">
+      <div class="products_details flex column">
+        <span>CHOOSE YOUR FLAVOUR</span>
+        <h2>THE BEST PIZZA MENU IN TOWN</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In repellat sunt natus numquam ipsum reiciendis asperiores suscipit tenetur?</p>
+      </div>
+
+      <div class="products_pics flex">
+        <div class="flex column" v-for="(pizza, index) in products" :key="index">
+          <img :src="products[index].src" alt="" width="250px">
+          <h5>{{pizza.title}}</h5>
+          <h5>{{pizza.price}}</h5>
+        </div>
+      </div>
+
+    </section>
     <section id="deals"></section>
     <section id="book_table"></section>
 
