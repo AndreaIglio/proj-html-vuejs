@@ -207,7 +207,7 @@ main {
 /* products */
 
 #products {
-  padding: 80px 0px;
+  padding: 100px 0px;
   /* align-items: center; */
 }
 
@@ -228,6 +228,57 @@ main {
 /* /products */
 
 /* deals */
+
+.deals {
+  height: 100%;
+}
+
+.deals > div {
+  width: 50%;
+}
+
+.deals_left {
+  height: 85%;
+  background-image: url('/assets/img/header/pizza_header_bg.jpg');
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.deals_left > div {
+  height: 80%;
+  justify-content: space-evenly;
+}
+
+.deals_events {
+  padding-bottom: 50px;
+  border-bottom: 1px dashed white;
+}
+
+.deals_events_date > * {
+  justify-content: start;
+  margin: 0;
+}
+
+.deals_events_description {
+  margin-left: 30px;
+}
+
+.deals_events_description > *{
+  justify-content: start;
+  
+}
+
+
+
+
+
+
+.deals_right {
+  height: 919px;
+  background-image: url('/assets/img/deals/h3-img-5a.jpg');
+}
+
 /* /deals */
 
 

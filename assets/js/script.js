@@ -80,7 +80,26 @@ let app = new Vue({
         title: "CAMPAGNOLA",
         price: "$30.00",
       },
-      
+    ],
+    deals: [
+      {
+        day: "02",
+        month: "NOV",
+        title: "TRADITIONAL NEAPOLITAN PIES IN KYOTO PIZZA MERCATO",
+        location: "204 E. Pizzetta Tommaso",
+      },
+      {
+        day: "03",
+        month: "NOV",
+        title: "TERRAZZA PATIO DINING SPACE OPENING THIS WEEKEND",
+        location: "204 E. Pizzetta Tommaso",
+      },
+      {
+        day: "05",
+        month: "NOV",
+        title: "SIENNA PRIVATE DINING ROOM WITH STEPHANE BRUNN",
+        location: "204 E. Pizzetta Tommaso",
+      },
     ],
   },
   methods: {},

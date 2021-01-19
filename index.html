@@ -130,7 +130,30 @@
       </div>
 
     </section>
-    <section id="deals"></section>
+    <section id="deals" class="deals flex">
+      <div class="deals_left flex column">
+        <div class="flex column">
+        <div class="flex column">
+        <span>MADE WITH LOVE</span>
+        <h2>DELISH PIZZA DEALS</h2>
+        </div>
+        <div class="deals_events flex" v-for="(event, index) in deals" :key="index">
+          <div class="flex column deals_events_date">
+          <h1>{{event.day}}</h1>
+          <h4>{{event.month}}</h4>
+          </div>
+          <div class="flex column deals_events_description">
+          <h4>{{event.title}}</h4>
+          <span>{{event.location}}</span>
+          </div>
+          
+        </div>
+        
+        </div>
+
+      </div>
+      <div class="deals_right"></div>
+    </section>
     <section id="book_table"></section>
 
 
