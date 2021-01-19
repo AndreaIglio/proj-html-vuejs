@@ -101,6 +101,46 @@ let app = new Vue({
         location: "204 E. Pizzetta Tommaso",
       },
     ],
+    restaurants: [
+      {
+        street: "1614 E. Bell Rd #104,",
+        city: "Salerno, AZ 85022",
+        phone: "(602)867-1010",
+      },
+      {
+        street: "1614 E. Bell Rd #104,",
+        city: "Salerno, AZ 85022",
+        phone: "(602)867-1010",
+      },
+      {
+        street: "1614 E. Bell Rd #104,",
+        city: "Salerno, AZ 85022",
+        phone: "(602)867-1010",
+      },
+      {
+        street: "1614 E. Bell Rd #104,",
+        city: "Salerno, AZ 85022",
+        phone: "(602)867-1010",
+      },
+    ],
+    working_hours: [
+      {
+        day: "MONDAY",
+        time: "Kitchen Closed",
+      },
+      {
+        day: "TUESDAY UNTIL FRIDAY",
+        time: "09:00 - 22:00",
+      },
+      {
+        day: "SATURDAY",
+        time: "Saturday 11am to midnight",
+      },
+      {
+        day: "SUNDAY",
+        time: "09:00 - 22:00",
+      },
+    ],
   },
   methods: {},
   mounted() {},

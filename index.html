@@ -154,7 +154,7 @@
       </div>
       <div class="deals_right"></div>
     </section>
-    <section id="book_table" class="flex">
+    <section id="book_table" class="flex column">
       <div class="booking flex">
         <form action="">
           <input type="text" placeholder="People">
@@ -173,8 +173,49 @@
 
 
   <!-- footer -->
-  <footer>
+  <footer id="footer" class="flex">
+    
+      <div class="footer_left flex column">
 
+        <div class="footer_left_top flex">
+          <div class="flex column find_restaurant">
+            <h4>FIND OUR RESTAURANT</h4>
+            <div class="flex column" v-for="(restaurant, index) in restaurants" :key="index">
+              <p>{{restaurant.street}}</p>
+              <p>{{restaurant.city}}</p>
+              <p>{{restaurant.phone}}</p>
+
+            </div>
+          </div>
+          <div class="flex column working_hours">
+            <h4>WORKING HOURS</h4>
+            <div class="flex column" v-for="(day, index) in working_hours" :key="index">
+              <h5>{{day.day}}</h5>
+              <p>{{day.time}}</p>
+            </div>
+            <div class="flex follow_us">
+              <h5>FOLLOW US:</h5>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin"></i>
+
+            </div>
+          </div>
+          <div class="flex">
+            <h3>
+              THE DON PEPPE CREW FIRST AND FOREMOST VALUES AN AUTHENTIC, WELL BAKED SLICE OF PIZZA.
+            </h3>
+          </div>
+        </div>
+        <div class="footer_left_bottom flex">
+          <p>Created with <i class="fas fa-heart"></i> .by <span>Code Interactive</span></p>
+          <p>asds</p>
+        </div>
+
+      </div>
+      <div class="footer_right flex"></div>
+  
   </footer>
   <!-- /footer -->
 
