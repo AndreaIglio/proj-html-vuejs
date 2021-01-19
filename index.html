@@ -32,7 +32,8 @@
 
 
   <!-- google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- /google font -->
 
   <title>Document</title>
@@ -40,22 +41,65 @@
 
 <body>
 
-<div class="flex wrapper column">
+<div class="flex wrapper column" id="root">
 
   <!-- header -->
   <header>
-    <section id="navbar"></section>
-    <section id="jumbotron"></section>
+    <section id="navbar">
+      <div class="navbar flex">
+        <div class="nav-left">asd</div>
+        <div class="nav-center">asd</div>
+        <div class="nav-right">asd</div>
+      </div>
+    </section>
+    <section id="jumbotron">
+    
+    </section>
 
   </header>
   <!-- /header -->
 
   <!-- main -->
   <main>
-    <section id="events"></section>
-    <section id="testimonials"></section>
-    <section id="specials"></section>
-    <section id="team_up"></section>
+    <section id="events" class="events flex">
+      <div class="flex" v-for="(event, index) in events" :key="index">
+        <img :src="events[index]" alt="" style="width: 100%;">
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="testimonials flex column">
+        <div class="flex column">
+          <h3>{{testimonials[counter].description}}</h3>
+          <h4>{{testimonials[counter].journal}}</h4>
+        </div>
+  
+      </div>
+    </section>
+    <section id="specials">
+      <div class="special flex">
+        <div class="special_left flex relative">
+          <img src="./assets/img/specials/h1-img-7n.png" alt="">
+        </div>
+        <div class="special_right flex column">
+          <div>
+          <h2>SPECIALS*</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesent ut.</p>
+          <div class="special_combo flex" v-for="(combo, index) in specials" :key="index">
+            <div class="special_combo_price">
+            <h3>{{combo.price}}</h3>
+            </div>
+            <div class="special_combo_details column">
+            <h3>{{combo.title}}</h3>
+            <p>{{combo.description}}</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team_up">
+      
+    </section>
     <section id="team_low"></section>
     <section id="partners"></section>
     <section id="products"></section>
