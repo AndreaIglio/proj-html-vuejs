@@ -6,21 +6,98 @@
 
 /* utility */
 
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
 /* /utility */
 
 
-/* header */
+/* HEADER */
 
-/* /header */
-
-
-
-/* main */
-
-/* /main */
+header {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
 
 
+/* navbar */
 
-/* footer */
+/* /navbar */
 
-/* /footer */
+
+/* jumbotron */
+/* /jumbotron */
+
+
+/* events */
+/* /events */
+
+
+
+/* /HEADER */
+
+
+
+/* MAIN */
+main {
+  width: 100%;
+  height: 100%;
+
+  background-color: yellow;
+
+}
+/* testimonials */
+/* /testimonials */
+
+
+
+/* specials */
+/* /specials */
+
+
+/* team_up */
+
+/* /team_up */
+
+
+/* /team_low */
+
+/* /team_low */
+
+
+/* partners */
+/* /partners */
+
+/* products */
+/* /products */
+
+/* deals */
+/* /deals */
+
+
+/* book_table */
+/* /book_table */
+
+/* /MAIN */
+
+
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 100%;
+
+  background-color: blue;
+}
+/* /FOOTER */
