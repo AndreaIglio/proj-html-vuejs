@@ -47,13 +47,52 @@
   <header>
     <section id="navbar">
       <div class="navbar flex">
-        <div class="nav-left">asd</div>
-        <div class="nav-center">asd</div>
-        <div class="nav-right">asd</div>
+            <img src="./assets/img/h5-logo-divided-header.png" alt="" class="logo">
+        <div class="nav_left flex">
+          <input type="submit" value="ORDER ONLINE">
+        </div>
+        <div class="nav_center flex">
+          <ul class="flex relative">
+             <li>
+               <a href="" class="flex">
+              <img src="./assets/img/navbar/mustache.svg" alt="" class="icons_navbar">
+              HOME</a></li>
+             <li><a href="#events" class="flex">PAGES</a></li>
+             <li><a href="#products" class="flex">MENU</a></li>
+          </ul>
+
+          <ul class="flex">
+            <li><a href="#deals" class="flex">EVENT</a></li>
+            <li><a href="" class="flex">BLOG</a></li>
+            <li><a href="" class="flex">LANDING</a></li>
+          </ul>
+        </div>
+        <div class="nav_right flex">
+          <ul class="flex">
+             <li>
+               <a href="" class="flex">
+              <img src="./assets/img/navbar/scooter.svg" alt="" class="icons_navbar">
+                CART</a>
+             </li>
+            <li>
+              <a href="" class="flex">SEARCH</a>
+              </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section id="jumbotron">
-    
+      <div class="flex banner relative">
+        <div class="prev relative" @click="prev()">
+          <span>PREV</span>
+        </div>
+        <img :src="jumbotron[jumbotronCounter].title" alt="">
+        <img :src="jumbotron[jumbotronCounter].pizza" alt="" class="banner_pizza">
+        <div class="next relative" @click="next()">
+          <span>NEXT</span>
+        </div>
+        
+      </div>
     </section>
 
   </header>
@@ -67,10 +106,16 @@
       </div>
     </section>
     <section id="testimonials">
-      <div class="testimonials flex column">
+      <div class="testimonials flex column relative">
         <div class="flex column">
+          <div class="prev">
+            <span>PREV</span>
+          </div>
           <h3>{{testimonials[counter].description}}</h3>
           <h4>{{testimonials[counter].journal}}</h4>
+          <div class="next">
+            <span>NEXT</span>
+          </div>
         </div>
   
       </div>
@@ -99,7 +144,6 @@
     </section>
     <section id="team_up">
       <div class="team_up">
-        asds
       </div>
     </section>
     <section id="team_low">

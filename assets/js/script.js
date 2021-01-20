@@ -1,7 +1,22 @@
 let app = new Vue({
   el: "#root",
   data: {
+    jumbotronCounter: 0,
     counter: 0,
+    jumbotron: [
+      {
+        title: "/assets/img/jumbotron/h3-rev-img-1.png",
+        pizza: "/assets/img/jumbotron/h3-rev-img-2.png",
+      },
+      {
+        title: "/assets/img/jumbotron/h3-rev-img-3.png",
+        pizza: "/assets/img/jumbotron/h3-rev-img-4.png",
+      },
+      {
+        title: "/assets/img/jumbotron/h3-rev-img-5.png",
+        pizza: "/assets/img/jumbotron/h3-rev-img-6.png",
+      },
+    ],
     events: [
       "./assets/img/events/h3-img-1.jpg",
       "./assets/img/events/h3-img-2.jpg",
@@ -142,6 +157,19 @@ let app = new Vue({
       },
     ],
   },
-  methods: {},
+  methods: {
+    next: function () {
+      this.jumbotronCounter++;
+      if (this.jumbotronCounter >= this.jumbotron.length) {
+        this.jumbotronCounter = 0;
+      }
+    },
+    prev: function () {
+      this.jumbotronCounter--;
+      if (this.jumbotronCounter < 0) {
+        this.jumbotronCounter = this.jumbotron.length - 1;
+      }
+    },
+  },
   mounted() {},
 });
