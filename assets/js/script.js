@@ -31,8 +31,7 @@ let app = new Vue({
         journal: "WASHINGTON POST 2018",
       },
       {
-        description:
-          "WE LOVE UNABOMBER",
+        description: "WE LOVE UNABOMBER",
         journal: "WASHINGTON POST 1995",
       },
     ],
@@ -57,10 +56,26 @@ let app = new Vue({
       },
     ],
     team_low: [
-      "./assets/img/team_low/a.jpg",
-      "./assets/img/team_low/b.jpg",
-      "./assets/img/team_low/c.jpg",
-      "./assets/img/team_low/d.jpg",
+      {
+        src: "./assets/img/team_low/a.jpg",
+        name: "Marcolino",
+        job: "Swagger",
+      },
+      {
+        src: "./assets/img/team_low/b.jpg",
+        name: "Paolina",
+        job: "Instagrammer",
+      },
+      {
+        src: "./assets/img/team_low/c.jpg",
+        name: "Eva",
+        job: "Laundrier",
+      },
+      {
+        src: "./assets/img/team_low/d.jpg",
+        name: "Stephen",
+        job: "Artist",
+      },
     ],
     partners: [
       "./assets/img/partners/h1-clients-img-1.png",
@@ -164,7 +179,6 @@ let app = new Vue({
     ],
   },
   methods: {
-
     // header
     nextImg: function () {
       this.jumbotronCounter++;
@@ -181,26 +195,23 @@ let app = new Vue({
 
     // /header
 
-
     // testimonials
 
-    nextTestimonial: function (){
-       this.testimonialCounter++;
-       if (this.testimonialCounter >= this.testimonials.length) {
-         this.testimonialCounter = 0;
-       }
+    nextTestimonial: function () {
+      this.testimonialCounter++;
+      if (this.testimonialCounter >= this.testimonials.length) {
+        this.testimonialCounter = 0;
+      }
     },
 
-    prevTestimonial: function (){
-       this.testimonialCounter--;
-       if (this.testimonialCounter < 0) {
-         this.testimonialCounter = this.testimonials.length - 1;
-       }
-    }
-
+    prevTestimonial: function () {
+      this.testimonialCounter--;
+      if (this.testimonialCounter < 0) {
+        this.testimonialCounter = this.testimonials.length - 1;
+      }
+    },
 
     // /testimonials
-
   },
   mounted() {},
 });

@@ -102,9 +102,9 @@
   <main>
     <section id="events" class="events flex">
       <div class="flex" v-for="(event, index) in events" :key="index">
-        <div class="overlay flex">
+        <div class="overlay_events flex">
           <div class="circle flex">
-            <i class="fas fa-glasses"></i>
+            <i class="fas fa-eye"></i>
           </div>
         <img :src="events[index]" alt="" style="width: 100%;">
         </div>
@@ -159,9 +159,23 @@
     <section id="team_low">
       <div class="team_low flex relative">
         <img src="/assets/img/svg/pizza.svg" alt="" class="pizza_icon">
-      <div class="flex" v-for="(team, index) in team_low" :key="index">
-        <img :src="team_low[index]" alt="" style="width: 100%;">
-      </div>
+      <div class="flex relative" v-for="(team, index) in team_low" :key="index">
+
+        <div class="overlay_team_low flex">
+          <div class="id flex column">
+            <h3>{{team.name}}</h3>
+            <h4>{{team.job}}</h4>
+            <div class="flex team_icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter"></i>
+            </div>
+          </div>
+        <img :src="team_low[index].src" alt="" style="width: 100%;">
+
+        </div>
+
+   
       </div>
     </section>
     <section id="partners" class="flex">

@@ -255,7 +255,7 @@ header {
   margin: 0 5px;
 }
 
-.overlay {
+.overlay_events {
   width: 100%;
   background-color: white;
   justify-content: center;
@@ -277,12 +277,12 @@ header {
   color: white;
 }
 
-.overlay:hover .circle {
+.overlay_events:hover .circle {
   opacity: 0.8;
   transition: 1s;
 }
 
-.overlay:hover img {
+.overlay_events:hover img {
   opacity: 0;
   transition: 1s;
 }
@@ -413,6 +413,41 @@ main {
 
 .team_low {
   justify-content: center;
+}
+
+.overlay_team_low {
+
+  width: 100%;
+  background-color: white;
+}
+
+.overlay_team_low:hover img {
+  opacity: 0;
+  transition: 1s;
+}
+
+.overlay_team_low:hover .id {
+  opacity: 1;
+  transition: 1s;
+}
+
+
+.id {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  background-color: #D2401E;
+}
+
+.team_icons i{
+  margin: 5px;
 }
 
 
