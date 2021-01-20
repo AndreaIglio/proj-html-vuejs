@@ -102,7 +102,12 @@
   <main>
     <section id="events" class="events flex">
       <div class="flex" v-for="(event, index) in events" :key="index">
+        <div class="overlay flex">
+          <div class="circle flex">
+            <i class="fas fa-glasses"></i>
+          </div>
         <img :src="events[index]" alt="" style="width: 100%;">
+        </div>
       </div>
     </section>
     <section id="testimonials">
@@ -249,10 +254,20 @@
             </div>
             <div class="flex follow_us">
               <h5 class="gold">FOLLOW US:</h5>
+              <a href="">
               <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="">
               <i class="fab fa-twitter"></i>
+              </a>
+              <a href="">
               <i class="fab fa-instagram"></i>
+
+              </a>
+              <a href="">
               <i class="fab fa-linkedin"></i>
+
+              </a>
 
             </div>
           </div>

@@ -255,7 +255,37 @@ header {
   margin: 0 5px;
 }
 
+.overlay {
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
 
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color:#D2401E;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle i {
+  color: white;
+}
+
+.overlay:hover .circle {
+  opacity: 0.8;
+  transition: 1s;
+}
+
+.overlay:hover img {
+  opacity: 0;
+  transition: 1s;
+}
 
 /* /events */
 
@@ -554,7 +584,7 @@ input[type=submit]{
   align-items: center;
 
 }
-.follow_us > i {
+.follow_us > a {
   margin: 0px 10px;
 }
 
