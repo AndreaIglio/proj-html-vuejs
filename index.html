@@ -83,12 +83,12 @@
     </section>
     <section id="jumbotron">
       <div class="flex banner relative">
-        <div class="prev relative" @click="prev()">
+        <div class="prev relative orange" @click="prevImg()">
           <span>PREV</span>
         </div>
         <img :src="jumbotron[jumbotronCounter].title" alt="">
         <img :src="jumbotron[jumbotronCounter].pizza" alt="" class="banner_pizza">
-        <div class="next relative" @click="next()">
+        <div class="next relative orange" @click="nextImg()">
           <span>NEXT</span>
         </div>
         
@@ -107,13 +107,14 @@
     </section>
     <section id="testimonials">
       <div class="testimonials flex column relative">
+        <img src="/assets/img/svg/pizza.svg" alt="" class="pizza_icon">
         <div class="flex column">
-          <div class="prev">
+          <div class="prev orange" @click="prevTestimonial()">
             <span>PREV</span>
           </div>
-          <h3>{{testimonials[counter].description}}</h3>
-          <h4>{{testimonials[counter].journal}}</h4>
-          <div class="next">
+          <h3>{{testimonials[testimonialCounter].description}}</h3>
+          <h4 class="orange">{{testimonials[testimonialCounter].journal}}</h4>
+          <div class="next orange" @click="nextTestimonial()">
             <span>NEXT</span>
           </div>
         </div>
@@ -121,7 +122,8 @@
       </div>
     </section>
     <section id="specials">
-      <div class="special flex">
+      <div class="special flex relative">
+        <img src="/assets/img/svg/pizza.svg" alt="" class="pizza_icon">
         <div class="special_left flex relative">
           <img src="./assets/img/specials/h1-img-7n.png" alt="">
         </div>
@@ -131,7 +133,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesent ut.</p>
           <div class="special_combo flex" v-for="(combo, index) in specials" :key="index">
             <div class="special_combo_price">
-            <h3>{{combo.price}}</h3>
+            <h3 class="orange">{{combo.price}}</h3>
             </div>
             <div class="special_combo_details column">
             <h3>{{combo.title}}</h3>
@@ -143,11 +145,15 @@
       </div>
     </section>
     <section id="team_up">
-      <div class="team_up">
-      </div>
+      <div class="team_up flex column">
+        <div>
+        <h1>GO AHEAD AND BUILD YOUR OWN PIZZA WE WON'T JUDGE!</h1>
+
+        </div>
     </section>
     <section id="team_low">
-      <div class="team_low flex">
+      <div class="team_low flex relative">
+        <img src="/assets/img/svg/pizza.svg" alt="" class="pizza_icon">
       <div class="flex" v-for="(team, index) in team_low" :key="index">
         <img :src="team_low[index]" alt="" style="width: 100%;">
       </div>
@@ -160,35 +166,39 @@
     </section>
     <section id="products" class="flex column">
       <div class="products_details flex column">
-        <span>CHOOSE YOUR FLAVOUR</span>
+        <span class="orange">CHOOSE YOUR FLAVOUR</span>
         <h2>THE BEST PIZZA MENU IN TOWN</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In repellat sunt natus numquam ipsum reiciendis asperiores suscipit tenetur?</p>
+        <p class="light_gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. In repellat sunt natus numquam ipsum reiciendis asperiores suscipit tenetur?</p>
       </div>
 
       <div class="products_pics flex">
-        <div class="flex column" v-for="(pizza, index) in products" :key="index">
+        <div class="flex column relative" v-for="(pizza, index) in products" :key="index">
+          <div class="circle_icon orange flex" v-if="pizza.sold">
+            <span>SOLD</span>
+          </div>
           <img :src="products[index].src" alt="" width="250px">
-          <h5>{{pizza.title}}</h5>
-          <h5>{{pizza.price}}</h5>
+          <h5 class="gold">{{pizza.title}}</h5>
+          <h5 class="orange">{{pizza.price}}</h5>
         </div>
       </div>
 
     </section>
-    <section id="deals" class="deals flex">
+    <section id="deals" class="deals flex relative">
+        <img src="/assets/img/svg/pizza.svg" alt="" class="pizza_icon">
       <div class="deals_left flex column">
         <div class="flex column">
         <div class="flex column">
-        <span>MADE WITH LOVE</span>
+        <span class="orange">MADE WITH LOVE</span>
         <h2>DELISH PIZZA DEALS</h2>
         </div>
         <div class="deals_events flex" v-for="(event, index) in deals" :key="index">
           <div class="flex column deals_events_date">
-          <h1>{{event.day}}</h1>
+          <h1 class="orange">{{event.day}}</h1>
           <h4>{{event.month}}</h4>
           </div>
           <div class="flex column deals_events_description">
           <h4>{{event.title}}</h4>
-          <span>{{event.location}}</span>
+          <span class="orange">{{event.location}}</span>
           </div>
           
         </div>
@@ -223,22 +233,22 @@
 
         <div class="footer_left_top flex">
           <div class="flex column find_restaurant">
-            <h4>FIND OUR RESTAURANT</h4>
+            <h4 class="gold">FIND OUR RESTAURANT</h4>
             <div class="flex column" v-for="(restaurant, index) in restaurants" :key="index">
-              <p>{{restaurant.street}}</p>
-              <p>{{restaurant.city}}</p>
-              <p>{{restaurant.phone}}</p>
+              <p class="light_gray">{{restaurant.street}}</p>
+              <p class="light_gray">{{restaurant.city}}</p>
+              <p class="light_gray">{{restaurant.phone}}</p>
 
             </div>
           </div>
           <div class="flex column working_hours">
-            <h4>WORKING HOURS</h4>
+            <h4 class="gold">WORKING HOURS</h4>
             <div class="flex column" v-for="(day, index) in working_hours" :key="index">
-              <h5>{{day.day}}</h5>
-              <p>{{day.time}}</p>
+              <h5 class="gold">{{day.day}}</h5>
+              <p class="light_gray">{{day.time}}</p>
             </div>
             <div class="flex follow_us">
-              <h5>FOLLOW US:</h5>
+              <h5 class="gold">FOLLOW US:</h5>
               <i class="fab fa-facebook-f"></i>
               <i class="fab fa-twitter"></i>
               <i class="fab fa-instagram"></i>
@@ -253,8 +263,8 @@
           </div>
         </div>
         <div class="footer_left_bottom flex">
-          <p>Created with <i class="fas fa-heart"></i> .by <span>Code Interactive</span></p>
-          <p>asds</p>
+          <p class="gold">Created with <i class="fas fa-heart"></i> .by <span class="green">Qode Interactive</span></p>
+
         </div>
 
       </div>

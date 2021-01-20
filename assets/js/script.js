@@ -2,6 +2,7 @@ let app = new Vue({
   el: "#root",
   data: {
     jumbotronCounter: 0,
+    testimonialCounter: 0,
     counter: 0,
     jumbotron: [
       {
@@ -29,7 +30,11 @@ let app = new Vue({
           "FORGET THE TRENDY PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES",
         journal: "WASHINGTON POST 2018",
       },
-      {},
+      {
+        description:
+          "WE LOVE UNABOMBER",
+        journal: "WASHINGTON POST 1995",
+      },
     ],
     specials: [
       {
@@ -79,6 +84,7 @@ let app = new Vue({
         src: "./assets/img/products/h3-product-img-3a-150x150.png",
         title: "VALDOSTANA",
         price: "$55.00",
+        sold: true,
       },
       {
         src: "./assets/img/products/h3-product-img-4a-150x150.png",
@@ -158,18 +164,43 @@ let app = new Vue({
     ],
   },
   methods: {
-    next: function () {
+
+    // header
+    nextImg: function () {
       this.jumbotronCounter++;
       if (this.jumbotronCounter >= this.jumbotron.length) {
         this.jumbotronCounter = 0;
       }
     },
-    prev: function () {
+    prevImg: function () {
       this.jumbotronCounter--;
       if (this.jumbotronCounter < 0) {
         this.jumbotronCounter = this.jumbotron.length - 1;
       }
     },
+
+    // /header
+
+
+    // testimonials
+
+    nextTestimonial: function (){
+       this.testimonialCounter++;
+       if (this.testimonialCounter >= this.testimonials.length) {
+         this.testimonialCounter = 0;
+       }
+    },
+
+    prevTestimonial: function (){
+       this.testimonialCounter--;
+       if (this.testimonialCounter < 0) {
+         this.testimonialCounter = this.testimonials.length - 1;
+       }
+    }
+
+
+    // /testimonials
+
   },
   mounted() {},
 });

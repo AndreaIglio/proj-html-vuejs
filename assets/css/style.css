@@ -4,6 +4,10 @@
   box-sizing:border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   overflow-x: hidden;
   font-family: 'Oswald', sans-serif;
@@ -69,7 +73,7 @@ li {
   right:1%;
   top: 40%;
   transform: rotate(90deg);
-  color: #D2401E;
+ 
   font-size: 10px;
   letter-spacing: 2px;
 
@@ -81,10 +85,8 @@ li {
    left:1%;
    top: 38%;
    transform: rotate(270deg);
-  color: #D2401E;
   font-size: 10px;
   letter-spacing: 2px;
-
  }
 
  a {
@@ -96,6 +98,52 @@ li {
    text-decoration: none;
  }
 
+.pizza_icon {
+  position: absolute;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #F6F7F2;
+  bottom: 5%;
+  right: 2%;
+  cursor: pointer;
+}
+
+.circle_icon {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  padding: 30px;
+  border-radius: 50%;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #D2401E;
+}
+
+.circle_icon > span {
+  color: white;
+  font-size: 12px;
+}
+
+ /* color */
+
+.orange {
+  color: #D2401E;
+}
+
+.light_gray {
+  color: #A6A6A6;
+}
+
+.gold {
+  color: #B7903C;
+}
+
+.green {
+  color: #339966;
+}
+
+ /* /color */
 
 /* /utility */
 
@@ -246,6 +294,10 @@ main {
   text-align: center;
 }
 
+.testimonials h1 {
+  font-size: 150px;
+}
+
 
 /* /testimonials */
 
@@ -307,7 +359,20 @@ main {
 .team_up {
   height: 800px;
   background-image: url('../img/team_up/h3-background-img.jpg');
+  background-attachment: fixed;
+  justify-content: center;
+  color: white;
+}
 
+.team_up > div {
+  width: 20%;
+  margin-left: 350px;
+}
+
+
+.team_up h1 {
+  font-size: 60px;
+  letter-spacing: 2px;
 }
 
 
@@ -378,7 +443,7 @@ main {
 
 .deals_events {
   padding-bottom: 50px;
-  border-bottom: 1px dashed white;
+  border-bottom: 1px dashed #B7903C;
 }
 
 .deals_events_date > * {
@@ -427,6 +492,7 @@ input {
   border:1px solid black;
   width: 200px;
   font-size: 12px;
+  color: #B7903C;
 }
 
 input[type=submit]{
