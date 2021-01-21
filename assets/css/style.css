@@ -6,7 +6,7 @@
 
 html {
   scroll-behavior: smooth;
-}
+} 
 
 body{
   overflow-x: hidden;
@@ -657,6 +657,7 @@ input[type=submit]{
 
 .footer_right {
   background-image: url('../img/footer/footer-img-1.jpg');
+  background-size: cover;
 }
 
 /* /FOOTER */
