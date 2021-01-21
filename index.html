@@ -7,7 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <!-- bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <!-- /bootstrap -->
 
 
@@ -46,40 +47,51 @@
   <!-- header -->
   <header>
     <section id="navbar">
-      <div class="navbar flex">
-            <img src="./assets/img/h5-logo-divided-header.png" alt="" class="logo">
-        <div class="nav_left flex">
-          <input type="submit" value="ORDER ONLINE">
-        </div>
-        <div class="nav_center flex">
-          <ul class="flex relative">
-             <li>
+       <nav class="navbar  navbar-expand-xl">
+         <div class="container">
+           <button type="button" class="btn btn-warning collapse navbar-collapse flex">ORDER ONLINE</button>
+           <ul class="navbar-nav list-group list-group-horizontal collapse navbar-collapse nav-a flex">
+             <li class="nav-item">
+               <a href="#header" class="flex">
+           <img src="./assets/img/navbar/mustache.svg" alt="" class="icons_navbar">
+                HOME</a>
+             </li>
+             <li class="nav-item">
+               <a href="#testimonials">PAGES</a>
+             </li>
+             <li class="nav-item">
+               <a href="#products">MENU</a>
+             </li>
+           </ul>
+           <img class="navbar-brand" src="./assets/img/h5-logo-divided-header.png" width="150">
+           <ul class="navbar-nav list-group list-group-horizontal nav-b collapse navbar-collapse flex">
+             <li class="nav-item">
+               <a href="#deals">EVENT</a>
+             </li>
+             <li class="nav-item">
+               <a href="">BLOG</a>
+             </li>
+             <li class="nav-item">
+               <a href="#footer">LANDING</a>
+             </li>
+           </ul>
+           <ul class="navbar-nav list-group list-group-horizontal nav-c collapse navbar-collapse flex">
+             <li class="nav-item">
                <a href="" class="flex">
-              <img src="./assets/img/navbar/mustache.svg" alt="" class="icons_navbar">
-              HOME</a></li>
-             <li><a href="#events" class="flex">PAGES</a></li>
-             <li><a href="#products" class="flex">MENU</a></li>
-          </ul>
-
-          <ul class="flex">
-            <li><a href="#deals" class="flex">EVENT</a></li>
-            <li><a href="" class="flex">BLOG</a></li>
-            <li><a href="" class="flex">LANDING</a></li>
-          </ul>
-        </div>
-        <div class="nav_right flex">
-          <ul class="flex">
-             <li>
-               <a href="" class="flex">
-              <img src="./assets/img/navbar/scooter.svg" alt="" class="icons_navbar">
+            <img src="./assets/img/navbar/scooter.svg" alt="" class="icons_navbar">
                 CART</a>
              </li>
-            <li>
-              <a href="" class="flex">SEARCH</a>
-              </li>
-          </ul>
-        </div>
-      </div>
+             <li class="nav-item">
+               <a href="">SEARCH</a>
+             </li>
+
+           </ul>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+             aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+         </div>
+       </nav>
     </section>
     <section id="jumbotron">
       <div class="flex banner relative">
