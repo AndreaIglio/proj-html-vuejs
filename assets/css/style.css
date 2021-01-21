@@ -73,7 +73,6 @@ li {
   right:1%;
   top: 40%;
   transform: rotate(90deg);
- 
   font-size: 10px;
   letter-spacing: 2px;
 
@@ -468,7 +467,6 @@ main {
 
 #products {
   padding: 100px 0px;
-  /* align-items: center; */
 }
 
 .products_details {
@@ -484,7 +482,10 @@ main {
 
 .products_pics > div {
   align-items: center;
+  cursor: pointer;
 }
+
+
 /* /products */
 
 /* deals */
@@ -543,8 +544,6 @@ main {
   background-image: url('/assets/img/book_table/h3-background-img-3.jpg');
   background-size: cover;
   justify-content: center;
-  
-
 }
 
 

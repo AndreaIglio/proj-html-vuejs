@@ -6,16 +6,16 @@ let app = new Vue({
     counter: 0,
     jumbotron: [
       {
-        title: "/assets/img/jumbotron/h3-rev-img-1.png",
-        pizza: "/assets/img/jumbotron/h3-rev-img-2.png",
+        title: "./assets/img/jumbotron/h3-rev-img-1.png",
+        pizza: "./assets/img/jumbotron/h3-rev-img-2.png",
       },
       {
-        title: "/assets/img/jumbotron/h3-rev-img-3.png",
-        pizza: "/assets/img/jumbotron/h3-rev-img-4.png",
+        title: "./assets/img/jumbotron/h3-rev-img-3.png",
+        pizza: "./assets/img/jumbotron/h3-rev-img-4.png",
       },
       {
-        title: "/assets/img/jumbotron/h3-rev-img-5.png",
-        pizza: "/assets/img/jumbotron/h3-rev-img-6.png",
+        title: "./assets/img/jumbotron/h3-rev-img-5.png",
+        pizza: "./assets/img/jumbotron/h3-rev-img-6.png",
       },
     ],
     events: [
