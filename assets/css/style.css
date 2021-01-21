@@ -496,7 +496,7 @@ main {
 
 .deals_left {
   height: 700px;
-  background-image: url('/assets/img/header/pizza_header_bg.jpg');
+  background-image: url('../img/header/pizza_header_bg.jpg');
   justify-content: center;
   align-items: center;
   color: white;
@@ -530,7 +530,7 @@ main {
 
 .deals_right {
   height: 800px;
-  background-image: url('/assets/img/deals/h3-img-5a.jpg');
+  background-image: url('../img/deals/h3-img-5a.jpg');
   background-size: cover;
 }
 
@@ -541,7 +541,7 @@ main {
 
 #book_table {
   height: 295px;
-  background-image: url('/assets/img/book_table/h3-background-img-3.jpg');
+  background-image: url('../img/book_table/h3-background-img-3.jpg');
   background-size: cover;
   justify-content: center;
 }
@@ -592,7 +592,7 @@ input[type=submit]{
 }
 
 .footer_left {
-  background-image: url('/assets/img/header/pizza_header_bg.jpg');
+  background-image: url('../img/header/pizza_header_bg.jpg');
   color: white;
   align-items: center;
   justify-content: space-between;
@@ -631,7 +631,7 @@ input[type=submit]{
 
 
 .footer_right {
-  background-image: url('/assets/img/footer/footer-img-1.jpg');
+  background-image: url('../img/footer/footer-img-1.jpg');
 }
 
 /* /FOOTER */
